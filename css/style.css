@@ -16,5 +16,13 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: var(--bg);
+  color: var(black);
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
 }
