@@ -25,4 +25,5 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
+  background-color: #fffaf1 rgba(1,1,1,0.8);
 }
