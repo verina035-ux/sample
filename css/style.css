@@ -26,7 +26,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: var(--secunder);
-  border-bottom: 30px solid var(--primary);
+  border-bottom: 10px solid var(--primary);
   position: fixed;
   top:0;
   left: 0;
@@ -35,6 +35,85 @@ body {
 }
 
 .navbar .navbar-logo{ 
-  display: ;
-  
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-style: italic;
+  margin: 0 0 0 0rem;
 }
+
+.navbar .navbar-logo span {
+  font-size: 1rem;
+  margin: 0 0 0 0;
+}
+
+.navbar .navbar-nav a{
+  color: #000;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.2rem;
+}
+
+.navbar .navbar-nav a:hover{
+  color: var(--primary)
+}
+
+.navbar .navbar-nav a::after{
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after{
+  transform: scalex(0.5);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-extra a{
+  color: #000;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px){
+  html{
+    font-size:75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+  html{
+    font-size:62.5%;
+  }
+
+#hamburger-menu {
+  display: inline:block;
+}
+
+.navbar .navbar-nav {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #fff;
+  width: 30 rem;
+  height: 100vh;
+
+}
+
+/* Mobile Phone */
+@media (max-width: 450px){
+  html{
+    font-size:55%;
+  }
